@@ -1,0 +1,47 @@
+2022010841@conv0:~/PA1$ srun -N 2 -n 50 odd_even_sort 10000000 data/10000000.dat >output.txt
+2022010841@conv0:~/PA1$ cat output.txt|grep time
+Execution time of function sort is 73.535000 ms.
+2022010841@conv0:~/PA1$ srun -N 2 -n 50 odd_even_sort 100000000 data/100000000.dat >output.txt
+2022010841@conv0:~/PA1$ cat output.txt|grep time
+Execution time of function sort is 829.369000 ms.
+2022010841@conv0:~/PA1$ srun -N 2 -n 50 odd_even_sort 1000000 data/1000000.dat >output.txt
+2022010841@conv0:~/PA1$ cat output.txt|grep time
+Execution time of function sort is 8.837000 ms.
+2022010841@conv0:~/PA1$ srun -n 50 odd_even_sort 1000000 data/1000000.dat >output.txt
+2022010841@conv0:~/PA1$ cat output.txt|grep time
+Execution time of function sort is 10.768000 ms.
+2022010841@conv0:~/PA1$ srun -n 32 odd_even_sort 1000000 data/1000000.dat >output.txt
+2022010841@conv0:~/PA1$ cat output.txt|grep time
+Execution time of function sort is 14.266000 ms.
+2022010841@conv0:~/PA1$ srun -n 10 odd_even_sort 1000000 data/1000000.dat >output.txt
+2022010841@conv0:~/PA1$ cat output.txt|grep time
+Execution time of function sort is 20.495000 ms.
+2022010841@conv0:~/PA1$ srun -N 2 -n 50 odd_even_sort 1000000 data/1000000.dat >output.txt
+2022010841@conv0:~/PA1$ cat output.txt|grep time
+Execution time of function sort is 10.808000 ms.
+2022010841@conv0:~/PA1$ srun -N 2 -n 50 odd_even_sort 1000000 data/1000000.dat >output.txt
+2022010841@conv0:~/PA1$ cat output.txt|grep time
+Execution time of function sort is 23.399000 ms.
+2022010841@conv0:~/PA1$ cat output.txt|grep time
+Execution time of function sort is 23.399000 ms.
+2022010841@conv0:~/PA1$ srun -N 2 -n 50 odd_even_sort 1000000 data/1000000.dat >output.txt
+2022010841@conv0:~/PA1$ cat output.txt|grep time
+Execution time of function sort is 9.003000 ms.
+2022010841@conv0:~/PA1$ srun -N 2 -n 50 odd_even_sort 1000000 data/1000000.dat >output.txt
+2022010841@conv0:~/PA1$ cat output.txt|grep time
+Execution time of function sort is 9.453000 ms.
+2022010841@conv0:~/PA1$ srun -N 2 -n 50 --cpu-bind socket odd_even_sort 1000000 data/1000000.dat >output.txt
+2022010841@conv0:~/PA1$ cat output.txt|grep time
+Execution time of function sort is 8.099000 ms.
+2022010841@conv0:~/PA1$ srun -N 2 -n 50 --cpu-bind socket odd_even_sort 100000000 data/100000000.dat >output.txt
+^Z
+[1]+  Stopped                 srun -N 2 -n 50 --cpu-bind socket odd_even_sort 100000000 data/100000000.dat > output.txt
+2022010841@conv0:~/PA1$ srun -N 2 -n 50 --cpu-bind socket odd_even_sort 100000000 data/100000000.dat >output.txt
+2022010841@conv0:~/PA1$ cat output.txt|grep time
+Execution time of function sort is 865.994000 ms.
+2022010841@conv0:~/PA1$ srun -N 2 -n 50 --cpu-bind socket odd_even_sort 100000000 data/100000000.dat >output.txt
+2022010841@conv0:~/PA1$ cat output.txt|grep time
+Execution time of function sort is 871.849000 ms.
+2022010841@conv0:~/PA1$ srun -N 2 -n 50 --cpu-bind socket odd_even_sort 100000000 data/100000000.dat >output.txt
+2022010841@conv0:~/PA1$ cat output.txt|grep time
+Execution time of function sort is 856.108000 ms.
